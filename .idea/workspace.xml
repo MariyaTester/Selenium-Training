@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ClickAllPointsOfTheAdminPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/EveryProductHasStickerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ClickAllPointsOfTheAdminPanelTest">
+  <component name="RunManager" selected="JUnit.EveryProductHasStickerTest">
     <configuration name="ClickAllPointsOfTheAdminPanelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -68,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInLiteCartTest.myFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EveryProductHasStickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -77,14 +77,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.LogInLiteCartTest" />
-      <option name="METHOD_NAME" value="myFirstTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassThroughAllSectionsOfTheAdminPanelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EveryProductHasStickerTest.clickAllProducts2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +92,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.PassThroughAllSectionsOfTheAdminPanelTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
+      <option name="METHOD_NAME" value="clickAllProducts2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EveryProductHasStickerTest" />
+        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProducts2" />
         <item itemvalue="JUnit.ClickAllPointsOfTheAdminPanelTest" />
         <item itemvalue="JUnit.PassThroughAllSectionsOfTheAdminPanelTest.clickAllPoints" />
         <item itemvalue="JUnit.PassThroughAllSectionsOfTheAdminPanelTest.clickCatalogAllSubpoints" />
-        <item itemvalue="JUnit.PassThroughAllSectionsOfTheAdminPanelTest" />
-        <item itemvalue="JUnit.LogInLiteCartTest.myFirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,12 +164,20 @@
       <option name="project" value="LOCAL" />
       <updated>1685033337639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Сценарий, проходящий по всем разделам админки сайта litecart">
+      <created>1685884806466</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685884806467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Синхронизация созданного проекта;&#10;Commit первого работающего автотеста (открытие google chrome, выполнение поиска, закрытие браузера)" />
     <MESSAGE value="Тест входа в litecart с верным логином и паролем" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест входа в litecart с верным логином и паролем" />
+    <MESSAGE value="Сценарий, проходящий по всем разделам админки сайта litecart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарий, проходящий по всем разделам админки сайта litecart" />
   </component>
 </project>
