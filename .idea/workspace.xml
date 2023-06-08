@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingCountriesAndGeoZonesTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/EveryProductHasStickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/EveryProductHasStickerTest.java" afterDir="false" />
@@ -53,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SortingCountriesAndGeoZonesTest">
+  <component name="RunManager" selected="JUnit.EveryProductHasStickerTest">
     <configuration name="EveryProductHasStickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -69,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EveryProductHasStickerTest.clickAllProducts2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EveryProductHasStickerTest.clickAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +78,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
       <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
-      <option name="METHOD_NAME" value="clickAllProducts2" />
+      <option name="METHOD_NAME" value="clickAllProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInLiteCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EveryProductHasStickerTest.clickAllProductsWithSoftAssert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +93,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.LogInLiteCartTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
+      <option name="METHOD_NAME" value="clickAllProductsWithSoftAssert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingCountriesAndGeoZonesTest.checkSortingCountriesAndGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortingGeoZonesTest.checkSortingGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +124,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
-      <option name="METHOD_NAME" value="checkSortingCountriesAndGeoZones" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingGeoZonesTest" />
+      <option name="METHOD_NAME" value="checkSortingGeoZones" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
-        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingCountriesAndGeoZones" />
-        <item itemvalue="JUnit.LogInLiteCartTest" />
         <item itemvalue="JUnit.EveryProductHasStickerTest" />
-        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProducts2" />
+        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProducts" />
+        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProductsWithSoftAssert" />
+        <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
+        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685890523499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке">
+      <created>1686152177808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686152177808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,6 +193,7 @@
     <MESSAGE value="Тест входа в litecart с верным логином и паролем" />
     <MESSAGE value="Сценарий, проходящий по всем разделам админки сайта litecart" />
     <MESSAGE value="Сценарий, проверяющий, что у каждого товара на главной странице litecart имеется ровно один стикер new/sale или иной." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сценарий, проверяющий, что у каждого товара на главной странице litecart имеется ровно один стикер new/sale или иной." />
+    <MESSAGE value="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке" />
   </component>
 </project>

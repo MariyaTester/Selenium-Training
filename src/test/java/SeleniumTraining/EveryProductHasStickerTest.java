@@ -13,6 +13,7 @@ import java.time.Duration;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.assertj.core.api.SoftAssertions;
 
 
@@ -30,17 +31,18 @@ public class EveryProductHasStickerTest {
 
     @Test
     public void clickAllProducts() {
-        List<WebElement> products = driver.findElements(By.cssSelector("[class$=hover-light]"));
+        List<WebElement> products = driver.findElements(By.className("product"));
         for (WebElement product : products) {
-            assertEquals(1, product.findElements(By.cssSelector("[class^=sticker]")).size());
+            assertEquals(1, product.findElements(By.className("sticker")).size());
         }
     }
+
     @Test
     public void clickAllProductsWithSoftAssert() {
         SoftAssertions softAssertions = new SoftAssertions();
-        List<WebElement> products = driver.findElements(By.cssSelector("[class$=hover-light]"));
+        List<WebElement> products = driver.findElements(By.className("product"));
         for (WebElement product : products) {
-            softAssertions.assertThat(product.findElements(By.cssSelector("[class^=sticker]")).size()).isEqualTo(1);
+            softAssertions.assertThat(product.findElements(By.className("sticker")).size()).isEqualTo(1);
         }
         softAssertions.assertAll();
     }
