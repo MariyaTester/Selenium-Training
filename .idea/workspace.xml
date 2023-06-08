@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingCountriesAndGeoZonesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingCountriesAndGeoZonesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames">
+  <component name="RunManager" selected="JUnit.SortingGeoZonesTest.checkSortingGeoZones">
     <configuration name="EveryProductHasStickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -64,22 +63,6 @@
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
       <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EveryProductHasStickerTest.clickAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-training.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
-      <option name="METHOD_NAME" value="clickAllProducts" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,13 +115,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingGeoZonesTest.checkSortingGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-training.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumTraining" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingGeoZonesTest" />
+      <option name="METHOD_NAME" value="checkSortingGeoZones" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingCountriesNames" />
         <item itemvalue="JUnit.EveryProductHasStickerTest" />
-        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProducts" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686225976024</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки.">
+      <created>1686233134880</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686233134880</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
