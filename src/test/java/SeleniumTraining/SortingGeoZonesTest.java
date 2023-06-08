@@ -42,24 +42,24 @@ public class SortingGeoZonesTest {
             String countOfGeoZones = driver.findElement(By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
                     countOfZonesColumn + "]")).getAttribute("textContent");
             int countOfZones = Integer.parseInt(countOfGeoZones);
-                driver.findElement(
-                        By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
-                                countriesNamesColumn + "]")).click();
-                    wait.until(titleIs("Edit Geo Zone | My Store"));
-                    List<String> incomingZonesNames = new ArrayList<>();
-                    //incomingZonesNames.add("XXXXXXXXXX");
-                    for (int j = 2; j <= countOfZones + 1; j++) {
-                        String zone = driver.findElement(
-                                By.xpath("//*[@id=\"table-zones\"]/tbody/tr[" + j + "]/td[" +
-                                        zonesNamesColumn + "]/select")).getAttribute("textContent");
-                        incomingZonesNames.add(zone);
-                    }
-                    List<String> expectingZonesNames = new ArrayList<>(incomingZonesNames);
-                    Collections.sort(expectingZonesNames);
-                    assertEquals(expectingZonesNames, incomingZonesNames);
-                    driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+            driver.findElement(
+                    By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
+                            countriesNamesColumn + "]")).click();
+            wait.until(titleIs("Edit Geo Zone | My Store"));
+            List<String> incomingZonesNames = new ArrayList<>();
+            for (int j = 2; j <= countOfZones + 1; j++) {
+                String zone = driver.findElement(
+                        By.xpath("//*[@id=\"table-zones\"]/tbody/tr[" + j + "]/td[" +
+                                zonesNamesColumn + "]/select")).getAttribute("textContent");
+                incomingZonesNames.add(zone);
+            }
+            List<String> expectingZonesNames = new ArrayList<>(incomingZonesNames);
+            Collections.sort(expectingZonesNames);
+            assertEquals(expectingZonesNames, incomingZonesNames);
+            driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         }
     }
+
     @AfterEach
     public void stop() {
         driver.quit();
