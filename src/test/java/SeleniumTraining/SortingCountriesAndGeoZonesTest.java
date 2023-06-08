@@ -46,7 +46,9 @@ public class SortingCountriesAndGeoZonesTest {
                             countriesNamesColumn + "]")).getAttribute("textContent");
             incomingCountriesNames.add(country);
         }
-        List<String> expectingCountriesNames = incomingCountriesNames;
+        System.out.println(incomingCountriesNames);
+
+        List<String> expectingCountriesNames = new ArrayList<>(incomingCountriesNames);
         Collections.sort(expectingCountriesNames);
         assertEquals(expectingCountriesNames, incomingCountriesNames);
     }
@@ -64,15 +66,14 @@ public class SortingCountriesAndGeoZonesTest {
                         By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
                                 editColumn + "]")).click();
                 wait.until(titleIs("Edit Country | My Store"));
-                List<WebElement> incomingZonesNamesWebElements = driver.findElements(By.className("row"));
                 List<String> incomingZonesNames = new ArrayList<>();
-                for (int j = 2; j <= incomingZonesNamesWebElements.size() + 1; j++) {
+                for (int j = 2; j <= countOfZones + 1; j++) {
                     String zone = driver.findElement(
                             By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + j + "]/td[" +
                                     zonesNamesColumn + "]")).getAttribute("textContent");
                     incomingZonesNames.add(zone);
                 }
-                List<String> expectingZonesNames = incomingZonesNames;
+                List<String> expectingZonesNames = new ArrayList<>(incomingZonesNames);
                 Collections.sort(expectingZonesNames);
                 assertEquals(expectingZonesNames, incomingZonesNames);
                 driver.navigate().back();

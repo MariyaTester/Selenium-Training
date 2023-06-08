@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="">
+    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки.">
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/EveryProductHasStickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/EveryProductHasStickerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingCountriesAndGeoZonesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingCountriesAndGeoZonesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.EveryProductHasStickerTest">
+  <component name="RunManager" selected="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames">
     <configuration name="EveryProductHasStickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -84,22 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EveryProductHasStickerTest.clickAllProductsWithSoftAssert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-training.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
-      <option name="METHOD_NAME" value="clickAllProductsWithSoftAssert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SortingCountriesAndGeoZonesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -110,12 +94,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
       <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
+      <option name="METHOD_NAME" value="checkSortingGeoZonesNames" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingGeoZonesTest.checkSortingGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortingCountriesAndGeoZonesTest.checkSortingCountriesNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +109,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingGeoZonesTest" />
-      <option name="METHOD_NAME" value="checkSortingGeoZones" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
+      <option name="METHOD_NAME" value="checkSortingCountriesNames" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-training.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumTraining" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
+      <option name="METHOD_NAME" value="checkSortingGeoZonesNames" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" />
+        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
+        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingCountriesNames" />
         <item itemvalue="JUnit.EveryProductHasStickerTest" />
         <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProducts" />
-        <item itemvalue="JUnit.EveryProductHasStickerTest.clickAllProductsWithSoftAssert" />
-        <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
-        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686152177808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Фикс задачи по стикерам после ревью. Изменены классы для поиска объектов при проверке наличия стикеров на товарах.">
+      <created>1686225976024</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686225976024</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +202,8 @@
     <MESSAGE value="Сценарий, проходящий по всем разделам админки сайта litecart" />
     <MESSAGE value="Сценарий, проверяющий, что у каждого товара на главной странице litecart имеется ровно один стикер new/sale или иной." />
     <MESSAGE value="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке" />
+    <MESSAGE value="Фикс задачи по стикерам после ревью. Изменены классы для поиска объектов при проверке наличия стикеров на товарах." />
+    <MESSAGE value="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки." />
   </component>
 </project>
