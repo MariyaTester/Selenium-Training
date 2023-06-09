@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки.">
+    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки.">
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/SortingGeoZonesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
   }
 }</component>
   <component name="RunManager" selected="JUnit.SortingGeoZonesTest.checkSortingGeoZones">
-    <configuration name="EveryProductHasStickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -61,7 +62,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.EveryProductHasStickerTest" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.RegistrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
+        <item itemvalue="JUnit.RegistrationTest" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingCountriesNames" />
-        <item itemvalue="JUnit.EveryProductHasStickerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686233134880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Сценарий, проверяющий на странице http://localhost/litecart/admin/?app=geo_zones&amp;doc=geo_zones переход в каждую из стран и расположение геозон на страницах этих стран в алфавитном порядке.">
+      <created>1686235286369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686235286369</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Форматирование теста">
+      <created>1686235409187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686235409187</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +225,20 @@
     <MESSAGE value="Сценарии, проверяющие на странице http://localhost/litecart/admin/?app=countries&amp;doc=countries:&#10;&#10;а) что страны расположены в алфавитном порядке&#10;&#10;б) для тех стран, у которых количество зон отлично от нуля, открывает страницу этой страны и там проверяет, что геозоны расположены в алфавитном порядке" />
     <MESSAGE value="Фикс задачи по стикерам после ревью. Изменены классы для поиска объектов при проверке наличия стикеров на товарах." />
     <MESSAGE value="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по сортировке стран и геозон после ревью. Обновлена сортировка для стран, геозон, исправлено добавление геозон в список для сортировки." />
+    <MESSAGE value="Сценарий, проверяющий на странице http://localhost/litecart/admin/?app=geo_zones&amp;doc=geo_zones переход в каждую из стран и расположение геозон на страницах этих стран в алфавитном порядке." />
+    <MESSAGE value="Форматирование теста" />
+    <MESSAGE value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -39,8 +39,9 @@ public class SortingGeoZonesTest {
     public void checkSortingGeoZones() {
         List<WebElement> incomingCountriesWebElements = driver.findElements(By.className("row"));
         for (int i = 2; i <= incomingCountriesWebElements.size() + 1; i++) {
-            String countOfGeoZones = driver.findElement(By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
-                    countOfZonesColumn + "]")).getAttribute("textContent");
+            String countOfGeoZones = driver.findElement(By.xpath(
+                    "//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
+                            countOfZonesColumn + "]")).getAttribute("textContent");
             int countOfZones = Integer.parseInt(countOfGeoZones);
             driver.findElement(
                     By.xpath("//*[@id=\"content\"]/form/table/tbody/tr[" + i + "]/td[" +
@@ -49,8 +50,9 @@ public class SortingGeoZonesTest {
             List<String> incomingZonesNames = new ArrayList<>();
             for (int j = 2; j <= countOfZones + 1; j++) {
                 String zone = driver.findElement(
-                        By.xpath("//*[@id=\"table-zones\"]/tbody/tr[" + j + "]/td[" +
-                                zonesNamesColumn + "]/select")).getAttribute("textContent");
+                                By.xpath("//*[@id=\"table-zones\"]/tbody/tr[" + j + "]/td[" +
+                                        zonesNamesColumn + "]/select/option[@selected=\"selected\"]"))
+                        .getAttribute("textContent");
                 incomingZonesNames.add(zone);
             }
             List<String> expectingZonesNames = new ArrayList<>(incomingZonesNames);
