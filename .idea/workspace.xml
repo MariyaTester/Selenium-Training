@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки.">
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686322857633</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр.">
+      <created>1686491005767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686491005767</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +241,12 @@
     <MESSAGE value="Сценарий, проверяющий на странице http://localhost/litecart/admin/?app=geo_zones&amp;doc=geo_zones переход в каждую из стран и расположение геозон на страницах этих стран в алфавитном порядке." />
     <MESSAGE value="Форматирование теста" />
     <MESSAGE value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
+    <MESSAGE value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/selenium_training$RegistrationTest_registration.ic" NAME="RegistrationTest.registration Coverage Results" MODIFIED="1686655475804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SeleniumTraining.*</FILTER>
+    </SUITE>
   </component>
 </project>

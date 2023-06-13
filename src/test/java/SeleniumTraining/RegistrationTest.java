@@ -11,17 +11,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Random;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
-
 public class RegistrationTest {
     private WebDriver driver;
     private WebDriverWait wait;
     private final String login = getStringOfLetters() + "@gmail.com";
     private final String password = getStringOfLetters();
     private final String country = "United States\n";
-    private final String beginOfLoginXPath = "//*[@id=\"box-account-login\"]/div/form/table/tbody/";
-    private final String beginOfRegistrationXPath = "//*[@id=\"create-account\"]/div/form/table/tbody/";
-    private final String logOutXPath = "//*[@id=\"box-account\"]/div/ul/li[4]/a";
+    private final String loginXPath = "//a[starts-with(@href,'http://localhost/litecart/en/create_account')]";
+    private final String logOutXPath = "//a[starts-with(@href,'http://localhost/litecart/en/logout')]";
     private final String phoneRegionCode = "310";
 
     @BeforeEach
@@ -34,49 +31,41 @@ public class RegistrationTest {
     @Test
     public void registration() {
         log("Переход в меню регистрации");
-        driver.findElement(By.xpath(beginOfLoginXPath + "tr[5]/td/a"))
-                .click();
-        //wait.until(titleIs("Create Account | My Store"));
+        driver.findElement(By.xpath(loginXPath)).click();
         log("Заполнение имени пользователя");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[2]/td[1]/input"))
-                .sendKeys(getStringOfLetters());
+        driver.findElement(By.name("firstname")).sendKeys(getStringOfLetters());
         log("Заполнение фамилии пользователя");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[2]/td[2]/input"))
-                .sendKeys(getStringOfLetters());
+        driver.findElement(By.name("lastname")).sendKeys(getStringOfLetters());
         log("Заполнение адреса (адрес 1)");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[3]/td[1]/input"))
-                .sendKeys(getStringOfLetters() + getNumber());
+        driver.findElement(By.name("address1")).sendKeys(getStringOfLetters() + getNumber());
         log("Заполнение почтового кода (США)");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[4]/td[1]/input")).sendKeys(getNumber());
+        driver.findElement(By.name("postcode")).sendKeys(getNumber());
         log("Заполнение поля города");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[4]/td[2]/input"))
-                .sendKeys(getStringOfLetters());
+        driver.findElement(By.name("city")).sendKeys(getStringOfLetters());
         log("Выбор страны (United States)");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[5]/td[1]/span[2]/span[1]")).click();
-        driver.findElement(By.xpath("/html/body/span/span/span[1]/input")).sendKeys(country);
+        driver.findElement(By.className("select2-selection__rendered")).click();
+        driver.findElement(By.className("select2-search__field")).sendKeys(country);
         log("Выбор региона (Калифорния, США)");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[5]/td[2]/select")).click();
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[5]/td[2]/select/option[12]")).click();
-        log("Заполнение email'а");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[6]/td[1]/input")).sendKeys(login);
+        driver.findElement(By.xpath("//select[@name='zone_code']")).click();
+        driver.findElement(By.xpath("//select[@name='zone_code']//option[@value='CA']")).click();
+        log("Заполнение email");
+        driver.findElement(By.name("email")).sendKeys(login);
         log("Заполнение номера телефона с кодом Калифорнии");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[6]/td[2]/input"))
-                .sendKeys(phoneRegionCode + getNumber());
+        driver.findElement(By.name("phone")).sendKeys(phoneRegionCode + getNumber());
         log("Первый ввод пароля (создание)");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[8]/td[1]/input")).sendKeys(password);
+        driver.findElement(By.name("password")).sendKeys(password);
         log("Подтверждение пароля");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[8]/td[2]/input")).sendKeys(password);
+        driver.findElement(By.name("confirmed_password")).sendKeys(password);
         log("Нажатие кнопки регистрации");
-        driver.findElement(By.xpath(beginOfRegistrationXPath + "tr[9]/td/button")).click();
+        driver.findElement(By.name("create_account")).click();
         log("Выход из учетной записи");
         driver.findElement(By.xpath(logOutXPath)).click();
         log("Вход в созданную учетную запись: введение логина (email)");
-        driver.findElement(By.xpath(beginOfLoginXPath + "tr[1]/td/input")).sendKeys(login);
+        driver.findElement(By.name("email")).sendKeys(login);
         log("Вход в созданную учетную запись: введение пароля");
-        driver.findElement(By.xpath(beginOfLoginXPath + "tr[2]/td/input")).sendKeys(password);
+        driver.findElement(By.name("password")).sendKeys(password);
         log("Нажатие кнопки входа в аккаунт");
-        driver.findElement(By.xpath(
-                beginOfLoginXPath + "tr[4]/td/span/button[1]")).click();
+        driver.findElement(By.name("login")).click();
         log("Выход из учетной записи");
         driver.findElement(By.xpath(logOutXPath)).click();
     }
@@ -102,7 +91,7 @@ public class RegistrationTest {
         return String.valueOf(10000 + (int) (Math.random() * 89999));
     }
 
-    private void log(String logInfo){
+    private void log(String logInfo) {
         System.out.println(logInfo);
     }
 }
