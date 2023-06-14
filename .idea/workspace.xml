@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/AddProductTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/gus.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,22 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.RegistrationTest.registration">
+  <component name="RunManager" selected="JUnit.AddProductTest">
+    <configuration name="AddProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-training.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumTraining" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.AddProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -79,22 +95,6 @@
       <option name="MAIN_CLASS_NAME" value="SeleniumTraining.RegistrationTest" />
       <option name="METHOD_NAME" value="registration" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingCountriesAndGeoZonesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-training.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
-      <option name="METHOD_NAME" value="checkSortingGeoZonesNames" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddProductTest" />
         <item itemvalue="JUnit.RegistrationTest.registration" />
         <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
         <item itemvalue="JUnit.RegistrationTest" />
         <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" />
-        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686491005767</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Фикс задачи по регистрации в клиентской части приложения liteCart">
+      <created>1686662103288</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686662103288</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,9 +249,13 @@
     <MESSAGE value="Форматирование теста" />
     <MESSAGE value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
     <MESSAGE value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
+    <MESSAGE value="Фикс задачи по регистрации в клиентской части приложения liteCart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по регистрации в клиентской части приложения liteCart" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/selenium_training$AddProductTest.ic" NAME="AddProductTest Coverage Results" MODIFIED="1686665758359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SeleniumTraining.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/selenium_training$RegistrationTest_registration.ic" NAME="RegistrationTest.registration Coverage Results" MODIFIED="1686655475804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SeleniumTraining.*</FILTER>
     </SUITE>
