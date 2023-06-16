@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/AddProductTest.java" afterDir="false" />
+    <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке).">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/gus.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
     </list>
@@ -52,7 +52,22 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AddProductTest">
+  <component name="RunManager" selected="JUnit.ActionsWithShoppingCartTest">
+    <configuration name="ActionsWithShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-training.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumTraining" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.ActionsWithShoppingCartTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -99,22 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-training.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.SortingCountriesAndGeoZonesTest" />
-      <option name="METHOD_NAME" value="checkSortingGeoZonesNames" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SortingGeoZonesTest.checkSortingGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -133,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActionsWithShoppingCartTest" />
         <item itemvalue="JUnit.AddProductTest" />
         <item itemvalue="JUnit.RegistrationTest.registration" />
         <item itemvalue="JUnit.SortingGeoZonesTest.checkSortingGeoZones" />
         <item itemvalue="JUnit.RegistrationTest" />
-        <item itemvalue="JUnit.SortingCountriesAndGeoZonesTest.checkSortingGeoZonesNames" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686662103288</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке).">
+      <created>1686757380298</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686757380298</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,7 +256,23 @@
     <MESSAGE value="Фикс задачи по сортировке геозон после ревью. Обновлена сортировка для геозон, исправлено добавление геозон в список для сортировки." />
     <MESSAGE value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
     <MESSAGE value="Фикс задачи по регистрации в клиентской части приложения liteCart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по регистрации в клиентской части приложения liteCart" />
+    <MESSAGE value="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке)." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="253" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/selenium_training$AddProductTest.ic" NAME="AddProductTest Coverage Results" MODIFIED="1686665758359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
