@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке).">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686757380298</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Сценарий работы с корзиной (добавление товаров, удаление товаров) в учебном приложении litecart (в магазине):&#10;&#10;1) Добавление трех товаров (первый товар из списка на главной странице приложения), ожидание обновления счетчика корзины при каждом добавлении.&#10;&#10;2) Удаление этих трех товаров, ожидание обновления таблицы товаров в корзине.&#10;+ Вынесение основных методов в отдельный класс">
+      <created>1686930879471</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686930879471</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,7 +264,8 @@
     <MESSAGE value="Сценарий для регистрации нового пользователя в приложении litecart (в клиентской части магазина). Сценарий включает:&#10;&#10;1) регистрация новой учётной записи с достаточно уникальным адресом электронной почты (чтобы не конфликтовало с ранее созданными пользователями, в том числе при предыдущих запусках того же самого сценария)&#10;2) выход (logout)&#10;3) повторный вход в только что созданную учётную запись&#10;4) повторный выход&#10;&#10;Страна выбора - United States, штат произвольный (Калифорния). Формат индекса - пять цифр." />
     <MESSAGE value="Фикс задачи по регистрации в клиентской части приложения liteCart" />
     <MESSAGE value="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сценарий для добавления нового товара (продукта) в учебном приложении litecart (в админке):&#10;&#10;1) Заполнение информации на вкладках General, Information и Prices. Скидки (Campains) на вкладке Prices можно не добавлять.&#10;&#10;2) Проверка, что после сохранения товара, он появился в каталоге (в админке)." />
+    <MESSAGE value="Сценарий работы с корзиной (добавление товаров, удаление товаров) в учебном приложении litecart (в магазине):&#10;&#10;1) Добавление трех товаров (первый товар из списка на главной странице приложения), ожидание обновления счетчика корзины при каждом добавлении.&#10;&#10;2) Удаление этих трех товаров, ожидание обновления таблицы товаров в корзине.&#10;+ Вынесение основных методов в отдельный класс" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарий работы с корзиной (добавление товаров, удаление товаров) в учебном приложении litecart (в магазине):&#10;&#10;1) Добавление трех товаров (первый товар из списка на главной странице приложения), ожидание обновления счетчика корзины при каждом добавлении.&#10;&#10;2) Удаление этих трех товаров, ожидание обновления таблицы товаров в корзине.&#10;+ Вынесение основных методов в отдельный класс" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -266,11 +274,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="253" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="254" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

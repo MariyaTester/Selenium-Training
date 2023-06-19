@@ -1,5 +1,6 @@
 package SeleniumTraining;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,8 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement;
 
 public class ActionsWithShoppingCartTest extends BaseTestClass {
+    //@RepeatedTest(100)
 
-    @Test
+      @Test
     public void addAndDeleteProducts() {
         for (int i = 1; i <= 3; i++) {
             clickOnElement(By.className("product"));
@@ -25,10 +27,11 @@ public class ActionsWithShoppingCartTest extends BaseTestClass {
         }
         clickOnElement(By.id("cart"));
         int countOfDifferentProducts = driver.findElements(By.className("shortcut")).size();
-        for (int i = countOfDifferentProducts; i > 0; i--) {
+        for (int i = countOfDifferentProducts; i > 1; i--) {
             clickOnElement(By.name("remove_cart_item"));
             wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath(
                     "//*[@class='dataTable rounded-corners']//tr"))));
         }
+        clickOnElement(By.name("remove_cart_item"));
     }
 }
