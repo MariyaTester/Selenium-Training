@@ -20,7 +20,6 @@ public class BaseTestClass {
     public void start() {
         driver = new FirefoxDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        openClientsMainPage();
     }
 
     @AfterEach
@@ -35,6 +34,9 @@ public class BaseTestClass {
 
     protected void openAdminsMainPage() {
         driver.get(mainAdminsPageURL);
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        clickOnElement(By.name("login"));
     }
 
     protected void clickOnElement(By by) {
