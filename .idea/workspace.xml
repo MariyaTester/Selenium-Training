@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ActionsWithShoppingCartTest">
+  <component name="RunManager" selected="JUnit.LinksOpenInNewWindowTest.clickOnLinks">
     <configuration name="ActionsWithShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -115,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.registration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinksOpenInNewWindowTest.clickOnLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.RegistrationTest" />
-      <option name="METHOD_NAME" value="registration" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.LinksOpenInNewWindowTest" />
+      <option name="METHOD_NAME" value="clickOnLinks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinksOpenInNewWindowTest.clickOnLinks" />
         <item itemvalue="JUnit.ActionsWithShoppingCartTest" />
         <item itemvalue="JUnit.ActionsWithShoppingCartTest.addAndDeleteProducts" />
         <item itemvalue="JUnit.LinksOpenInNewWindowTest" />
         <item itemvalue="JUnit.AddProductTest" />
-        <item itemvalue="JUnit.RegistrationTest.registration" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687180118730</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Фикс задачи по действиям с корзиной (добавление -&gt; удаение трех товаров): обновлена последовательность действий при удалении товаров на: найти элемент, который должен исчезнуть -&gt; кликнуть по кнопке удаления -&gt; ожидание, пока элемент исчезнет">
+      <created>1687436969648</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687436969648</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
