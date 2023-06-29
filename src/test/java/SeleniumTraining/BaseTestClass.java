@@ -1,5 +1,6 @@
 package SeleniumTraining;
 
+import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
@@ -15,10 +16,11 @@ public class BaseTestClass {
     protected WebDriverWait wait;
     protected final String mainClientsPageURL = "http://localhost/litecart/";
     protected final String mainAdminsPageURL = "http://localhost/litecart/admin/";
+    protected SoftAssertions softAssertions = new SoftAssertions();
 
     @BeforeEach
     public void start() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 

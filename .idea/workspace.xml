@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e858c96a-8a21-418a-acad-412d83efdb14" name="Changes" comment="Фикс задачи по действиям с корзиной (добавление -&gt; удаение трех товаров): обновлена последовательность действий при удалении товаров на: найти элемент, который должен исчезнуть -&gt; кликнуть по кнопке удаления -&gt; ожидание, пока элемент исчезнет">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LinksOpenInNewWindowTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/PassThroughAllSectionsOfTheAdminPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ViewingBrowserLogsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/ActionsWithShoppingCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/BaseTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTraining/LogInLiteCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.LinksOpenInNewWindowTest.clickOnLinks">
+  <component name="RunManager" selected="JUnit.ViewingBrowserLogsTest">
     <configuration name="ActionsWithShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-training.test" />
       <extension name="coverage">
@@ -80,21 +81,6 @@
       <option name="MAIN_CLASS_NAME" value="SeleniumTraining.ActionsWithShoppingCartTest" />
       <option name="METHOD_NAME" value="addAndDeleteProducts" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-training.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTraining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SeleniumTraining" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.AddProductTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,13 +116,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ViewingBrowserLogsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-training.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTraining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumTraining" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTraining.ViewingBrowserLogsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ViewingBrowserLogsTest" />
         <item itemvalue="JUnit.LinksOpenInNewWindowTest.clickOnLinks" />
         <item itemvalue="JUnit.ActionsWithShoppingCartTest" />
         <item itemvalue="JUnit.ActionsWithShoppingCartTest.addAndDeleteProducts" />
         <item itemvalue="JUnit.LinksOpenInNewWindowTest" />
-        <item itemvalue="JUnit.AddProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687436969648</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Сценарий, проверяющий, что при нажатии на сслыки на странице создания страны в litecrt/admin переход происходит на новые вкладки">
+      <created>1687445528208</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687445528208</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -281,7 +289,8 @@
     <MESSAGE value="Сценарий работы с корзиной (добавление товаров, удаление товаров) в учебном приложении litecart (в магазине):&#10;&#10;1) Добавление трех товаров (первый товар из списка на главной странице приложения), ожидание обновления счетчика корзины при каждом добавлении.&#10;&#10;2) Удаление этих трех товаров, ожидание обновления таблицы товаров в корзине.&#10;+ Вынесение основных методов в отдельный класс" />
     <MESSAGE value="Фикс задачи по действиям с корзиной (добавление -&gt; удаение трех товаров)" />
     <MESSAGE value="Фикс задачи по действиям с корзиной (добавление -&gt; удаение трех товаров): обновлена последовательность действий при удалении товаров на: найти элемент, который должен исчезнуть -&gt; кликнуть по кнопке удаления -&gt; ожидание, пока элемент исчезнет" />
-    <option name="LAST_COMMIT_MESSAGE" value="Фикс задачи по действиям с корзиной (добавление -&gt; удаение трех товаров): обновлена последовательность действий при удалении товаров на: найти элемент, который должен исчезнуть -&gt; кликнуть по кнопке удаления -&gt; ожидание, пока элемент исчезнет" />
+    <MESSAGE value="Сценарий, проверяющий, что при нажатии на сслыки на странице создания страны в litecrt/admin переход происходит на новые вкладки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сценарий, проверяющий, что при нажатии на сслыки на странице создания страны в litecrt/admin переход происходит на новые вкладки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
